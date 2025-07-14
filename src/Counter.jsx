@@ -14,14 +14,32 @@ function Counter(){
 
     const increment = () => {
         setCount(count + 1);
+
+        // Updater Function
+        // setCount(count + 1);
+        // setCount(count + 1);
+        // setCount(count + 1);
+        // Uses the CURRENT state to calculate the NEXT state.
+        // set functions do not trigger an update.
+        // React batches together state updates for performance reasons.
+        // NEXT state becomes the CURRENT state after an update.
+        setCount(prevCount => prevCount + 1);
+        setCount(prevCount => prevCount + 1);
+        // Takes the PENDING state to calculate NEXT state.
+        // React puts your updater function in a queue (waiting in line)
+        // During the next render, it will call them in the same order.
+
     }
 
     const decrement = () => {
-        setCount(count - 1);
+        setCount(c => c - 1);
+        setCount(c => c - 1);
+        setCount(c => c - 1);
     }
 
     const reset = () => {
-        setCount(0);
+        // setCount(0);
+        setCount(c => c = 0);
     }
 
     return(

@@ -79,6 +79,17 @@ function App() {
         {/* Color Picker */}
         <ColorPicker/>
 
+
+        {/* Updater function -  A function passed as an argument to setState() 
+        usually.
+        ex. - setYear(updater function)
+        Allow for safe updates based on the previous state 
+        Used with multiple state updates and asynchronous functions 
+        Good practice to use updater functions*/}
+        {/* Counter.jsx */}
+
+
+
         <Footer/>
       </>
       // Empty angular brackets because App 
