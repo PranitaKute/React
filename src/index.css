@@ -167,3 +167,87 @@ font-size: 2.5em;
   border-radius: 10px;
   border: 3px solid hsl(0, 0, 80%);
 }
+
+/* To Do List App */
+.to-do-list{
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.to-do-list h1{
+  font-size: 4rem;
+}
+
+.to-do-list button{
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.add-button{
+  background-color: #1599db ;
+}
+
+.add-button:hover{
+  background-color: #47a8d9;
+}
+
+.delete-button{
+  background-color: #f65353;
+}
+
+.delete-button:hover{
+  background-color: #fc6868;
+}
+
+.move-button{
+  background-color: beige;
+}
+
+.move-button:hover{
+  background-color: rgb(221, 221, 200);
+}
+
+.to-do-list input[type = "text"]{
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 2px solid hsl(0, 0%, 80%, 0.5);
+  border-radius: 5px;
+  color: darkslategray;
+}
+
+.to-do-list ol{
+  padding: 0; 
+}
+
+.to-do-list li{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: hsl(0, 0%, 97%);
+  margin-bottom: 10px;
+  border: 3px solid hsl(0, 0%, 85%, 0.75);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.text{
+  flex: 1;
+  /* flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%; 
+  shortcut of flex: 1*/
+}
+
+.delete-button, .move-button{
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+}

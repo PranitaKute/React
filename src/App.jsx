@@ -13,6 +13,7 @@ import MyComponent from "./myComponent";
 import Counter from "./Counter";
 import ColorPicker from "./ColorPicker";
 import Car from "./Car";
+import ToDoList from "./ToDoList";
 
 function App() {
   // Rendering List - List.jsx
@@ -90,12 +91,15 @@ function App() {
         {/* Counter.jsx */}
 
         
-        
+
         {/* update OBJECTS in state - MyComponent.jsx*/}
         {/* update ARRAYS in state  - MyComponent.jsx*/}
         {/* update ARRAY of OBJECTS in state - Car.jsx */}
         <Car/>
 
+
+          {/* To Do List */}
+          <ToDoList/>
 
         <Footer/>
       </>
