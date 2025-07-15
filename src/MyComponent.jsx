@@ -75,7 +75,42 @@ function MyComponent(){
         setShipping(event.target.value);
     }
 
-    return(<div>
+
+
+    /* update OBJECTS in state */
+    const [car, setCar] = useState( {year: 2025, 
+                                    make: "Ford", 
+                                    model: "Mustang"});
+    function handleYearChange(event){
+        setCar(c => ({...c, year: event.target.value}));
+    }
+    function handleMakeChange(event){
+        setCar(c => ({...c, make: event.target.value}));
+    }
+    function handleModelChange(event){
+        setCar(c => ({...c, model: event.target.value}));
+    }
+
+
+
+    // update ARRAYS in state
+    const [foods, setFoods] = useState(["Apple", "Orange", "Banana"]);
+    function handleAddFood(){
+        const newFood = document.getElementById("foodInput").value;
+        document.getElementById("foodInput").value = "";
+        setFoods(f => [...f, newFood]);
+    }
+    function handleRemoveFood(index){
+        setFoods(foods.filter((_, i) => i != index ));
+    }
+
+
+    // update ARRAY of OBJECTS in state 
+    // Car.jsx
+
+
+    return(<>
+        <div>
             <input value={name} onChange={handleNameChange}/>
             <p>Name : {name}</p>
 
@@ -108,6 +143,34 @@ function MyComponent(){
             </label>
             <p>Shipping : {shipping}</p>
         </div>
+
+
+
+        {/* update OBJECTS in state */}
+        <div>
+            <p>Your favorite car is : {car.year} {car.make} {car.model}</p>
+            <input type="number" value={car.year} onChange={handleYearChange}/> <br/>
+            <input type="text" value={car.make} onChange={handleMakeChange}/>  <br/>
+            <input type="text" value={car.model} onChange={handleModelChange}/>
+        </div>
+
+
+
+        {/* update ARRAYS in state  */}
+        <div>
+            <h2>List of Food</h2>
+            <ul>
+                {foods.map((food, index) => 
+                <li key={index} 
+                    onClick={() => handleRemoveFood(index)}>
+                    {food}
+                </li>)}
+            </ul>
+            <input type="text" id="foodInput" placeholder="Enter Food Name" />
+            <button onClick={handleAddFood}>Add Food</button>
+        </div>
+
+    </>
     )
 }
 
