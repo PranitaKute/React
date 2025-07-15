@@ -14,6 +14,7 @@ import Counter from "./Counter";
 import ColorPicker from "./ColorPicker";
 import Car from "./Car";
 import ToDoList from "./ToDoList";
+import UseEffect from "./UseEffect";
 
 function App() {
   // Rendering List - List.jsx
@@ -100,6 +101,10 @@ function App() {
 
           {/* To Do List */}
           <ToDoList/>
+
+
+          {/* useEffect */}
+          <UseEffect/>
 
         <Footer/>
       </>
