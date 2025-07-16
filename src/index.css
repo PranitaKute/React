@@ -251,3 +251,34 @@ font-size: 2.5em;
   font-size: 1.4rem;
   margin-left: 10px;
 }
+
+
+/* Digital Clock */
+.clock-container{
+  background-image: url(assets/Traffic.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-attachment: fixed;
+  margin: 0;
+
+  /* optional */
+  display: flex;
+  justify-content: center;
+  /* min-height: 100vh; */
+  align-items: center;
+
+  /* clock-container */
+  backdrop-filter: blur(500px);
+  /* width: 100vw; */
+  padding: 10px 0;
+}
+
+.clock{
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: monospace;
+  text-shadow: 3px 3px 5px rgb(0, 0, 0, 0.75);
+  text-align: center;
+}

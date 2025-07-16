@@ -15,6 +15,7 @@ import ColorPicker from "./ColorPicker";
 import Car from "./Car";
 import ToDoList from "./ToDoList";
 import UseEffect from "./UseEffect";
+import DigitalClock from "./DigitalClock";
 
 function App() {
   // Rendering List - List.jsx
@@ -105,6 +106,7 @@ function App() {
 
           {/* useEffect */}
           <UseEffect/>
+          <DigitalClock/>
 
         <Footer/>
       </>
