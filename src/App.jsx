@@ -16,6 +16,8 @@ import Car from "./Car";
 import ToDoList from "./ToDoList";
 import UseEffect from "./UseEffect";
 import DigitalClock from "./DigitalClock";
+import ComponentA from "./ComponentA";
+import ComponentB from "./ComponentB";
 
 function App() {
   // Rendering List - List.jsx
@@ -107,6 +109,25 @@ function App() {
           {/* useEffect */}
           <UseEffect/>
           <DigitalClock/>
+
+          {/* useContext() - React Hook that allows you to share values 
+          between multiple levels of components without passing props 
+          through each level
+          Provider Component
+          1. import {createContext} from 'react';
+          2. export const MyContext = createContext();
+          3. <MyContext.Provider value={value}>
+              <child/>
+            </MyContext.Provider>
+
+          Consumer Components
+          1. import React, { useContext } from 'react';
+              import { MyContext } from './ComponentA';
+          2. const value = useContext(MyContext);
+          */}
+          
+          <ComponentA/>
+
 
         <Footer/>
       </>
