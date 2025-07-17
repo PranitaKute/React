@@ -18,6 +18,7 @@ import UseEffect from "./UseEffect";
 import DigitalClock from "./DigitalClock";
 import ComponentA from "./ComponentA";
 import NewComponent from "./NewComponent";
+import StopWatch from "./StopWatch";
 
 function App() {
   // Rendering List - List.jsx
@@ -139,7 +140,8 @@ function App() {
           2. Handling Focus, Animations, and Transactions
           3. Managing Timers and Intervals.
           */}
-          <NewComponent/>
+          <NewComponent/><br/><br/>
+          <StopWatch/>
 
 
         <Footer/>
