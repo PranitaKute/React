@@ -17,7 +17,7 @@ import ToDoList from "./ToDoList";
 import UseEffect from "./UseEffect";
 import DigitalClock from "./DigitalClock";
 import ComponentA from "./ComponentA";
-import ComponentB from "./ComponentB";
+import NewComponent from "./NewComponent";
 
 function App() {
   // Rendering List - List.jsx
@@ -125,8 +125,21 @@ function App() {
               import { MyContext } from './ComponentA';
           2. const value = useContext(MyContext);
           */}
-          
           <ComponentA/>
+
+
+          {/* useRef()
+          useState() - Re-renders the component when the state value changes 
+          useRef() - "use Reference" Does not cause re-renders when its value 
+          changes.
+          When you want a component to "remember" some information, but you 
+          don't want that information to trigger new renders.
+
+          1. Accessing/Interacting with DOM elements
+          2. Handling Focus, Animations, and Transactions
+          3. Managing Timers and Intervals.
+          */}
+          <NewComponent/>
 
 
         <Footer/>
